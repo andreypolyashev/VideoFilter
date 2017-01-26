@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		5849652A1E3A308600FD570D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584965291E3A308600FD570D /* AppDelegate.swift */; };
-		5849652C1E3A308600FD570D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5849652B1E3A308600FD570D /* ViewController.swift */; };
 		5849652F1E3A308600FD570D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5849652D1E3A308600FD570D /* Main.storyboard */; };
 		584965311E3A308600FD570D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584965301E3A308600FD570D /* Assets.xcassets */; };
 		584965341E3A308600FD570D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584965321E3A308600FD570D /* LaunchScreen.storyboard */; };
+		584965451E3A32B400FD570D /* LineMakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584965431E3A32B400FD570D /* LineMakerController.swift */; };
+		584965461E3A32B400FD570D /* LineMakerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584965441E3A32B400FD570D /* LineMakerController.xib */; };
+		5849654A1E3A381F00FD570D /* VideoFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584965481E3A381F00FD570D /* VideoFilterController.swift */; };
+		5849654B1E3A381F00FD570D /* VideoFilterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584965491E3A381F00FD570D /* VideoFilterController.xib */; };
+		5849654E1E3A6CC700FD570D /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5849654D1E3A6CC700FD570D /* FilterManager.swift */; };
+		584965501E3A6CE300FD570D /* FilterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5849654F1E3A6CE300FD570D /* FilterTypes.swift */; };
+		584965531E3A6F7900FD570D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584965521E3A6F7900FD570D /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		584965261E3A308600FD570D /* LineMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584965291E3A308600FD570D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5849652B1E3A308600FD570D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5849652E1E3A308600FD570D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		584965301E3A308600FD570D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		584965331E3A308600FD570D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		584965351E3A308600FD570D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584965431E3A32B400FD570D /* LineMakerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineMakerController.swift; sourceTree = "<group>"; };
+		584965441E3A32B400FD570D /* LineMakerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineMakerController.xib; sourceTree = "<group>"; };
+		584965481E3A381F00FD570D /* VideoFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFilterController.swift; sourceTree = "<group>"; };
+		584965491E3A381F00FD570D /* VideoFilterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoFilterController.xib; sourceTree = "<group>"; };
+		5849654D1E3A6CC700FD570D /* FilterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		5849654F1E3A6CE300FD570D /* FilterTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTypes.swift; sourceTree = "<group>"; };
+		584965521E3A6F7900FD570D /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,60 @@
 		584965281E3A308600FD570D /* LineMaker */ = {
 			isa = PBXGroup;
 			children = (
+				584965471E3A37FD00FD570D /* VideoFilter */,
+				5849653E1E3A319C00FD570D /* Supporting Files */,
+				5849653D1E3A318A00FD570D /* LineMaker */,
 				584965291E3A308600FD570D /* AppDelegate.swift */,
-				5849652B1E3A308600FD570D /* ViewController.swift */,
 				5849652D1E3A308600FD570D /* Main.storyboard */,
+			);
+			path = LineMaker;
+			sourceTree = "<group>";
+		};
+		5849653D1E3A318A00FD570D /* LineMaker */ = {
+			isa = PBXGroup;
+			children = (
+				584965511E3A6F6100FD570D /* DrawingView */,
+				584965431E3A32B400FD570D /* LineMakerController.swift */,
+				584965441E3A32B400FD570D /* LineMakerController.xib */,
+			);
+			name = LineMaker;
+			sourceTree = "<group>";
+		};
+		5849653E1E3A319C00FD570D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				584965301E3A308600FD570D /* Assets.xcassets */,
 				584965321E3A308600FD570D /* LaunchScreen.storyboard */,
 				584965351E3A308600FD570D /* Info.plist */,
 			);
-			path = LineMaker;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		584965471E3A37FD00FD570D /* VideoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				5849654C1E3A6CBD00FD570D /* FilterManager */,
+				584965481E3A381F00FD570D /* VideoFilterController.swift */,
+				584965491E3A381F00FD570D /* VideoFilterController.xib */,
+			);
+			name = VideoFilter;
+			sourceTree = "<group>";
+		};
+		5849654C1E3A6CBD00FD570D /* FilterManager */ = {
+			isa = PBXGroup;
+			children = (
+				5849654D1E3A6CC700FD570D /* FilterManager.swift */,
+				5849654F1E3A6CE300FD570D /* FilterTypes.swift */,
+			);
+			name = FilterManager;
+			sourceTree = "<group>";
+		};
+		584965511E3A6F6100FD570D /* DrawingView */ = {
+			isa = PBXGroup;
+			children = (
+				584965521E3A6F7900FD570D /* DrawingView.swift */,
+			);
+			name = DrawingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +154,7 @@
 				TargetAttributes = {
 					584965251E3A308600FD570D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M8Q3U54STZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584965461E3A32B400FD570D /* LineMakerController.xib in Resources */,
 				584965341E3A308600FD570D /* LaunchScreen.storyboard in Resources */,
 				584965311E3A308600FD570D /* Assets.xcassets in Resources */,
 				5849652F1E3A308600FD570D /* Main.storyboard in Resources */,
+				5849654B1E3A381F00FD570D /* VideoFilterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5849652C1E3A308600FD570D /* ViewController.swift in Sources */,
+				5849654A1E3A381F00FD570D /* VideoFilterController.swift in Sources */,
+				584965451E3A32B400FD570D /* LineMakerController.swift in Sources */,
 				5849652A1E3A308600FD570D /* AppDelegate.swift in Sources */,
+				584965531E3A6F7900FD570D /* DrawingView.swift in Sources */,
+				5849654E1E3A6CC700FD570D /* FilterManager.swift in Sources */,
+				584965501E3A6CE300FD570D /* FilterTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +325,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8Q3U54STZ;
 				INFOPLIST_FILE = LineMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndreyPolyashev.LineMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +339,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8Q3U54STZ;
 				INFOPLIST_FILE = LineMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndreyPolyashev.LineMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
